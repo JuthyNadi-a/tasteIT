@@ -4,7 +4,6 @@ import classes from './Nav.module.css'
 
 const Nav = () => {
     return (
-        
         <nav className={classes.nav}>
             <ul className={classes.links}>
                 <li>
@@ -17,8 +16,7 @@ const Nav = () => {
                     <NavLink to='/add'>Add more recipes</NavLink>
                 </li>
             </ul>
-        </nav>
-       
+        </nav> 
     );
 };
 

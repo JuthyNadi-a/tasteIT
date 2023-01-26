@@ -12,6 +12,7 @@
     top: 3vh;
     left: 6vw;
     text-align: left;
+    font-weight: 700;
 }
 .cards {
     display: flex;

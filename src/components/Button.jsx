@@ -1,13 +1,10 @@
 import React from 'react';
-import './Button.module.css'
+import classes from './Button.module.css'
 const Button = ({name}) => {
     return (
-        <div>
-            <button>
+            <button className={classes.bannerBtn}>
                 {name}
             </button>
-        </div>
     );
 };
-
 export default Button;
