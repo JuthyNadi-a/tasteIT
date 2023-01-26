@@ -1,0 +1,9 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh;
+}
+.button {
+    background-color: darkorange;
+}

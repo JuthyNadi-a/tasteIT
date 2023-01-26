@@ -1,0 +1,9 @@
+.bannerVideo {
+    object-fit: cover;
+    width: 100vw;
+    height: 50vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
