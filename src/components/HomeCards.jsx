@@ -11,7 +11,7 @@ const HomeCards = () => {
                     heading={'Browse recipes'}
                     details={'Find your favourite recipes by searching  based on name or country'}
                     link={'recipes'}
-                    name={'Browse all recipes'}
+                    name={'All recipes'}
                     />
                     <HomeCard 
                     heading={'Add recipes'}
