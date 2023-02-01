@@ -1,34 +1,34 @@
 import React from 'react';
 
-const Form = ({submit, inputHandler, firstName, lastName, phoneNumber, role, message}) => {
+const Form = ({submit, inputHandler, recipeName, author, recipeCountry, description}) => {
     return (
             <form className='content' onSubmit={submit}>
-                <div className='inputs firstName'>
-                    <label htmlFor="firstName">First name</label>
-                    <input type="text" name="firstName" id="firstName" value={firstName} onChange={inputHandler}/>
+                <div className='inputs recipeName'>
+                    <label htmlFor="recipeName">Recipe name</label>
+                    <input type="text" name="recipeName" id="recipeName" value={recipeName} onChange={inputHandler}/>
                 </div>
-                <div className='inputs lastName'>
-                    <label htmlFor="lastName">Last name</label>
-                    <input type="text" name="lastName" id="lastName" value={lastName} onChange={inputHandler}/>
-                </div>
-                <div className='inputs'>
-                    <label htmlFor="phoneNumber">Phone number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" value={phoneNumber} onChange={inputHandler}/>
+                <div className='inputs author'>
+                    <label htmlFor="author">Author</label>
+                    <input type="text" name="author" id="author" value={author} onChange={inputHandler}/>
                 </div>
                 <div className='inputs'>
-                    <label htmlFor="role">Role</label>
-                    <select name='role' id="role" onChange={inputHandler} defaultValue="choice">
+                    <label htmlFor="recipeCountry">Country</label>
+                    <input type="tel" name="recipeCountry" id="recipeCountry" value={recipeCountry} onChange={inputHandler}/>
+                </div>
+                <div className='inputs'>
+                    <label htmlFor="countryFlag">Country flag</label>
+                    <select name='countryFlag' id="countryFlag" onChange={inputHandler} defaultValue="choice">
                         <option value="choice" disabled>Choose a option</option>
-                        <option value="teacher">Teacher</option>
+                        {/* <option value="teacher">Teacher</option>
                         <option value="student">Student</option>
-                        <option value="other">Other</option>
+                        <option value="other">Other</option> */}
                     </select>
                 </div>
                 <div className='inputs'>
-                    <label htmlFor="mesage">Message</label>
-                    <textarea name="message" id="message" cols="20" rows="7" value={message} onChange={inputHandler}></textarea>
+                    <label htmlFor="mesage">Description</label>
+                    <textarea name="description" id="description" cols="20" rows="7" value={description} onChange={inputHandler}></textarea>
                 </div>
-                <button type="submit" id='send'>Send</button>
+                <button type="submit" id='send'>Add</button>
             </form>
     )
 }
