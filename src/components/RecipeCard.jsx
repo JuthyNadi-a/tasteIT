@@ -2,7 +2,7 @@ import React/* , {useState, useEffect} */ from 'react';
 /* import axios from 'axios'; */
 import Button from './Button';
 import classes from './RecipeCard.module.css'
-const RecipeCard = ({name, flag}) => {
+const RecipeCard = ({card_name, flag}) => {
    /*  const [countries, setCountries] = useState([]);
 
     useEffect(() => {
@@ -18,10 +18,9 @@ const RecipeCard = ({name, flag}) => {
     },[]); */
     return (
         <div className={classes.recipeCard}>
-            <img src={`https://source.unsplash.com/30vwx15vh/${name}`} alt={name}/>
-            <img src={flag} alt={flag} />
-            <h1>{name}</h1>
-            <Button name={'See more'}/>
+            <img src={`https://source.unsplash.com/500x400/?${card_name}`} alt={card_name}/>
+            <h1>{card_name}</h1>
+            <Button name={'See more'} className={classes.moreBtn}/>
         </div>
     );
 };

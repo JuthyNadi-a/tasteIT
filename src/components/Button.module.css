@@ -1,7 +1,10 @@
-.bannerBtn {
+.btn {
     border: none;
     background-color: rgba(92, 7, 7, 0.694);
     color: aliceblue;
     font-size: 2.4vh;
     height: 4.7vh;
+}
+.btn:hover {
+    background-color: rgba(151, 61, 2, 0.694); 
 }

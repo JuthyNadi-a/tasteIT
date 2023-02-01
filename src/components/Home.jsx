@@ -16,7 +16,7 @@ const Home = () => {
                     <h1>TasteIT</h1>
                     <h3>TasteIT is an recipe app.</h3>
                     <NavLink to="recipes">
-                        <Button name={'Browse Recipes'}/>
+                        <Button name={'Browse Recipes'} />
                     </NavLink>
                 </div>
                 <p className={classes.recipeText}>Looking for the recipes?</p>

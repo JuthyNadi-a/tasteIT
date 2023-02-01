@@ -1,7 +1,19 @@
 .recipeCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(134, 172, 172, 0.321);
+    margin: 1vh;
+    padding: 2vh;
+    text-align: center;
 }
 img{
-    height: 15vh;
-    width: 30vw;
+    height: 100%;
+    width: 20vw;
+    object-fit: cover;
+}
+.moreBtn {
+    background-color: orangered;
+    border-radius: 5vh;
 }
