@@ -1,88 +1,106 @@
 {
-    "recipes": [
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Beef curry",
+      "author": "Nabila",
+      "country": "Bangladesh",
+      "description": "Snacks item. Made in special occassions.",
+      "image": "",
+      "flag": "",
+      "ingredients": [
         {
-            "id": 1,
-            "name": "Beef curry",
-            "author": "Nabila",
-            "country": "Bangladesh",
-            "description": "Snacks item. Made in special occassions.",
-            "image": "",
-            "flag":"",
-            "ingredients": [
-                {
-                    "ingredient": "pulse seed",
-                    "quantity": "1 kg"
-                },
-                {
-                    "ingredient": "water",
-                    "quantity": ".5 l"
-                },
-                {
-                    "ingredient": "Potato",
-                    "quantity": "4"
-                },
-                {
-                    "ingredient": "Egg",
-                    "quantity": "3"
-                }
-            ],
-            "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+          "ingredient": "pulse seed",
+          "quantity": "1 kg"
         },
         {
-            "id": 2,
-            "name": "Haleem",
-            "author": "Nadia",
-            "country": "Bangladesh",
-            "description": "Snacks item. Made in special occassions.",
-            "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tasteatlas.com%2Fmost-popular-meat-dishes-in-telangana&psig=AOvVaw0rapLq-OkNEOhooqafZ0al&ust=1674839159124000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCI6Zrc5fwCFQAAAAAdAAAAABAE",
-            "flag":"",
-            "ingredients": [
-                {
-                    "ingredient": "pulse seed",
-                    "quantity": "1 kg"
-                },
-                {
-                    "ingredient": "water",
-                    "quantity": ".5 l"
-                },
-                {
-                    "ingredient": "Potato",
-                    "quantity": "4"
-                },
-                {
-                    "ingredient": "Egg",
-                    "quantity": "3"
-                }
-            ],
-            "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
-        }, 
+          "ingredient": "water",
+          "quantity": ".5 l"
+        },
         {
-            "id": 3,
-            "name": "Biriyani",
-            "author": "Ronita",
-            "country": "Bangladesh",
-            "description": "Snacks item. Made in special occassions.",
-            "image": "",
-            "flag":"",
-            "ingredients": [
-                {
-                    "ingredient": "pulse seed",
-                    "quantity": "1 kg"
-                },
-                {
-                    "ingredient": "water",
-                    "quantity": ".5 l"
-                },
-                {
-                    "ingredient": "Potato",
-                    "quantity": "4"
-                },
-                {
-                    "ingredient": "Egg",
-                    "quantity": "3"
-                }
-            ],
-            "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+          "ingredient": "Potato",
+          "quantity": "4"
+        },
+        {
+          "ingredient": "Egg",
+          "quantity": "3"
         }
-    ]
+      ],
+      "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+    },
+    {
+      "id": 2,
+      "name": "Haleem",
+      "author": "Nadia",
+      "country": "Bangladesh",
+      "description": "Snacks item. Made in special occassions.",
+      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tasteatlas.com%2Fmost-popular-meat-dishes-in-telangana&psig=AOvVaw0rapLq-OkNEOhooqafZ0al&ust=1674839159124000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCI6Zrc5fwCFQAAAAAdAAAAABAE",
+      "flag": "",
+      "ingredients": [
+        {
+          "ingredient": "pulse seed",
+          "quantity": "1 kg"
+        },
+        {
+          "ingredient": "water",
+          "quantity": ".5 l"
+        },
+        {
+          "ingredient": "Potato",
+          "quantity": "4"
+        },
+        {
+          "ingredient": "Egg",
+          "quantity": "3"
+        }
+      ],
+      "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+    },
+    {
+      "id": 3,
+      "name": "Cake",
+      "author": "Ronita",
+      "country": "Bangladesh",
+      "description": "Snacks item. Made in special occassions.",
+      "image": "",
+      "flag": "",
+      "ingredients": [
+        {
+          "ingredient": "pulse seed",
+          "quantity": "1 kg"
+        },
+        {
+          "ingredient": "water",
+          "quantity": ".5 l"
+        },
+        {
+          "ingredient": "Potato",
+          "quantity": "4"
+        },
+        {
+          "ingredient": "Egg",
+          "quantity": "3"
+        }
+      ],
+      "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+    },
+    {
+      "recipeName": "Spaghetti",
+      "author": "Aidan",
+      "description": "good ",
+      "ingredient": "flour",
+      "quantity": "4 cup",
+      "image": "https://unsplash.com/photos/iNwCO9ycBlc",
+      "id": 4
+    },
+    {
+      "recipeName": "Spaghetti",
+      "author": "Aidan",
+      "description": "good",
+      "ingredient": "flour",
+      "quantity": "4 cup",
+      "image": "https://unsplash.com/photos/iNwCO9ycBlc",
+      "id": 5
+    }
+  ]
 }
