@@ -6,7 +6,7 @@ import classes from './Recipes.module.css'
 
 const Recipes = () => {
     const [data, setData] = useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     const [search, setSearch] = useState({
         string: '',
     });
@@ -48,7 +48,7 @@ const Recipes = () => {
                 <RecipeCard 
                 key={item.id}
                 card_name = {item.name}
-                flag= {item.flag}
+                flag= {item.country}
                 link={`/recipes/${item.id}`}
                 />
                 )

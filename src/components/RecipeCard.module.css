@@ -7,9 +7,20 @@
     margin: 1vh;
     padding: 2vh;
     text-align: center;
+    position: relative;
 }
 img{
     height: 100%;
     width: 20vw;
     object-fit: cover;
+}
+
+.flag {
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    width: 6vh;
+    height: 6vh;
+    object-fit: cover;
+    border-radius: 48%;
 }

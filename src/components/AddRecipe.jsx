@@ -1,12 +1,11 @@
 import axios from 'axios';
 import React , { useEffect, useState } from 'react';
 
-
+import classes from './Add.module.css';
 const Add = ({ name, author, description, instructions}) => {
     const [recipes, setRecipes] = useState({
         name: '', 
         author: '', 
-        flag: '',
         description: '',
         image: '',
         instructions: '',
@@ -34,17 +33,17 @@ const Add = ({ name, author, description, instructions}) => {
        axios.post("http://localhost:3007/recipes", {...recipes, ...ingredients})
        .then((res)=> {
            setRecipes(res.data)
-           console.log(res.data)
            alert('Submitted');
-        })
+        });
         setRecipes({
+            ...recipes,
             name: '', 
-            author: '', 
-            flag: '',
+            author: '',
             description: '',
             image: '',
             instructions: '',
         });
+        setCountries([]);
         setIngredients([
             {ingredient: '', quantity: ''} 
         ]);
@@ -53,7 +52,7 @@ const Add = ({ name, author, description, instructions}) => {
         axios.get("https://restcountries.com/v2/all").then((res)=> {
             const countries = res.data.map((country)=> {
                 return {
-                    name: country.name,
+                    country_name: country.name,
                     flag: country.flag
                 };
             });
@@ -71,15 +70,17 @@ const Add = ({ name, author, description, instructions}) => {
                     <label htmlFor="author">Author</label>
                     <input type="text" required name="author" id="author" value={author} onChange={inputHandler}/>
                 </div>
-                <div className='inputs countries'>
+                <div className={classes.flag}>
                     <label htmlFor="country">Recipe is from: </label>
                     <select 
                     id='country'
-                    name="country">
+                    name="country"
+                    onChange={inputHandler}
+                    >
                         <option>Select Your Country</option>
                         { countries.map((country)=> (
-                            <option value={country.flag} key={country.name}>
-                                {country.name}
+                            <option value={country.flag} key={country.country_name}>
+                                {country.country_name}
                             </option>
                             ))
                         }

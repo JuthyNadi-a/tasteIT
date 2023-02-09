@@ -4,9 +4,9 @@
       "id": 1,
       "name": "Haleem",
       "author": "Nabila",
-      "flag": "https://restcountries.com/v3.1/name/bangladesh",
+      "country": "https://flagcdn.com/bd.svg",
       "description": "Snacks item. Made in special occassions.",
-      "image": "",
+      "image": "https://unsplash.com/photos/epEr6ewYufY",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -31,7 +31,7 @@
       "id": 2,
       "name": "Chotpoti",
       "author": "Nadia",
-      "flag": "https://restcountries.com/v3.1/name/bangladesh",
+      "country": "https://flagcdn.com/bd.svg",
       "description": "Snacks item. Made in special occassions.",
       "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tasteatlas.com%2Fmost-popular-meat-dishes-in-telangana&psig=AOvVaw0rapLq-OkNEOhooqafZ0al&ust=1674839159124000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCI6Zrc5fwCFQAAAAAdAAAAABAE",
       "ingredients": [
@@ -58,8 +58,7 @@
       "id": 3,
       "name": "Cake",
       "author": "Ronita",
-      "flag": "https://restcountries.com/v3.1/name/bangladesh",
-      "country": "Bangladesh",
+      "country": "https://flagcdn.com/fi.svg",
       "description": "Snacks item. Made in special occassions.",
       "image": "",
       "ingredients": [
@@ -81,36 +80,6 @@
         }
       ],
       "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
-    },
-    {
-      "0": {
-        "ingredient": "water",
-        "quantity": "4 cup"
-      },
-      "1": {
-        "ingredient": "tea",
-        "quantity": "3 cups"
-      },
-      "name": "Tea",
-      "author": "Juthy",
-      "flag": "",
-      "description": "asdasd",
-      "image": "https://unsplash.com/photos/iNwCO9ycBlc",
-      "instructions": "asvdmhaj",
-      "id": 4
-    },
-    {
-      "0": {
-        "ingredient": "water",
-        "quantity": "3 cups"
-      },
-      "name": "Tea",
-      "author": "Aidan",
-      "flag": "",
-      "description": "ijlo",
-      "image": "https://unsplash.com/photos/iNwCO9ycBlc",
-      "instructions": "jgkj",
-      "id": 5
     }
   ]
 }
