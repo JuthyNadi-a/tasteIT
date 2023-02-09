@@ -2,12 +2,11 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Beef curry",
+      "name": "Haleem",
       "author": "Nabila",
-      "country": "Bangladesh",
+      "flag": "https://restcountries.com/v3.1/name/bangladesh",
       "description": "Snacks item. Made in special occassions.",
       "image": "",
-      "flag": "",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -30,12 +29,11 @@
     },
     {
       "id": 2,
-      "name": "Haleem",
+      "name": "Chotpoti",
       "author": "Nadia",
-      "country": "Bangladesh",
+      "flag": "https://restcountries.com/v3.1/name/bangladesh",
       "description": "Snacks item. Made in special occassions.",
       "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tasteatlas.com%2Fmost-popular-meat-dishes-in-telangana&psig=AOvVaw0rapLq-OkNEOhooqafZ0al&ust=1674839159124000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCI6Zrc5fwCFQAAAAAdAAAAABAE",
-      "flag": "",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -60,10 +58,10 @@
       "id": 3,
       "name": "Cake",
       "author": "Ronita",
+      "flag": "https://restcountries.com/v3.1/name/bangladesh",
       "country": "Bangladesh",
       "description": "Snacks item. Made in special occassions.",
       "image": "",
-      "flag": "",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -85,21 +83,33 @@
       "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
     },
     {
-      "recipeName": "Spaghetti",
-      "author": "Aidan",
-      "description": "good ",
-      "ingredient": "flour",
-      "quantity": "4 cup",
+      "0": {
+        "ingredient": "water",
+        "quantity": "4 cup"
+      },
+      "1": {
+        "ingredient": "tea",
+        "quantity": "3 cups"
+      },
+      "name": "Tea",
+      "author": "Juthy",
+      "flag": "",
+      "description": "asdasd",
       "image": "https://unsplash.com/photos/iNwCO9ycBlc",
+      "instructions": "asvdmhaj",
       "id": 4
     },
     {
-      "recipeName": "Spaghetti",
+      "0": {
+        "ingredient": "water",
+        "quantity": "3 cups"
+      },
+      "name": "Tea",
       "author": "Aidan",
-      "description": "good",
-      "ingredient": "flour",
-      "quantity": "4 cup",
+      "flag": "",
+      "description": "ijlo",
       "image": "https://unsplash.com/photos/iNwCO9ycBlc",
+      "instructions": "jgkj",
       "id": 5
     }
   ]

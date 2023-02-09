@@ -10,20 +10,22 @@ const HomeCards = () => {
                     <HomeCard
                     heading={'Browse recipes'}
                     details={'Find your favourite recipes by searching  based on name or country'}
-                    link={'recipes'}
+                    navLink={'/recipes'}
                     name={'All recipes'}
                     />
                     <HomeCard 
                     heading={'Add recipes'}
                     details={'Recipe from your country is missing? No worries, add one!'}
-                    link={'add'}
+                    navLink={'/add'}
                     name={'Add new recipes'}
                     />
                     <HomeCard 
                     heading={'Want to know more about our projects?'}
                     details={'Visit our programme homepage'}
-                    link={'/'}
                     name={'Business College Helsinki'}
+                    navLink={'https://en.bc.fi/'}
+                    target={'_blank'}
+                    rel={'noreferrer'}
                     />
                 </div>
         </div>

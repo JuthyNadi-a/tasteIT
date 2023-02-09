@@ -1,11 +1,49 @@
-import React from 'react';
+import axios from 'axios';
+import React , { useState } from 'react';
 
-const Form = ({submit, inputHandler, recipeName, author, description, ingredient, quantity, more, post}) => {
+
+const Form = ({ name, author, description}) => {
+    const [recipes, setRecipes] = useState({
+        name: '', 
+        author: '', 
+        description: '',
+        image: '',
+        ingredients: [
+            {ingredient: '', quantity: ''}
+        ]
+    });
+
+    const [ingredients, setIngredients] = useState([
+        {ingredient: '', quantity: ''}
+        ])
+
+    const inputHandler = (e) => {
+        setRecipes({...recipes, [e.target.name]: e.target.value})
+    };
+    const handleIngredientChange = (input,event) => {
+    let data = [...ingredients];
+    data[input][event.target.name] = event.target.value;
+    setIngredients(data);
+    }
+
+    const addMoreHandler = () => {
+        let newIngredient = { ingredient: '', quantity: ''}
+        setIngredients([...ingredients, newIngredient])
+    }
+
+    const submitHandler = (e) => {
+        e.preventDefault();
+       axios.post("http://localhost:3007/recipes", {...recipes}, {...ingredients})
+       .then((res)=> {
+        setRecipes(res.data);
+        console.log(ingredients);
+       })
+    }
     return (
-            <form className='content' onSubmit={submit}>
-                <div className='inputs recipeName'>
-                    <label htmlFor="recipeName">Recipe name</label>
-                    <input type="text" name="recipeName" id="recipeName" value={recipeName} onChange={inputHandler}/>
+            <form className='content' onSubmit={submitHandler}>
+                <div className='inputs name'>
+                    <label htmlFor="name">Recipe name</label>
+                    <input type="text" name="name" id="name" value={name} onChange={inputHandler}/>
                 </div>
                 <div className='inputs author'>
                     <label htmlFor="author">Author</label>
@@ -25,18 +63,46 @@ const Form = ({submit, inputHandler, recipeName, author, description, ingredient
                     <label htmlFor="image">Image</label>
                     <input type="url" name="image" id="image" onChange={inputHandler}/>
                 </div>
-                <div className=''>
+                <div>
+                {
+                    ingredients.map((input, index) => {
+                        return (
+                            <div className='ingredient-group' key={index}>
+                            <div>
+                                <label htmlFor='ingredient'>Ingredient</label>
+                                <input 
+                                type="text" 
+                                name="ingredient" 
+                                placeholder="Enter ingredient's name"
+                                value={input.ingredient} 
+                                onChange={ event => handleIngredientChange(index, event)}/>
+                            </div>
+                            <div>
+                            <label htmlFor="quantity">Quantity</label>
+                                <input 
+                                type="text" 
+                                name="quantity"
+                                placeholder="Enter ingredient's quantity"
+                                value={input.quantity} 
+                                onChange={event => handleIngredientChange(index, event)}/>
+                            </div>
+                        </div> 
+                        )
+                    })
+                }
+                </div>
+                {/* <div className='ingredient-group'>
                     <div>
-                        <label htmlFor="ingredient">Ingredient</label>
+                        <label htmlFor='ingredient'>Ingredient</label>
                         <input type="text" name="ingredient" id="ingredient" value={ingredient} onChange={inputHandler}/>
                     </div>
                     <div>
                     <label htmlFor="quantity">Quantity</label>
                         <input type="text" name="quantity" id="quantity" value={quantity} onChange={inputHandler}/>
                     </div>
-                </div>
-                <button type="submit" onClick={more}>more</button>
-                <button type="submit" id='send' onClick={post}>Add</button>
+                </div> */}
+                <button type="submit" onClick={addMoreHandler}>more ingredients</button>
+                <button type="submit" id='send' onClick={submitHandler}>Add recipe</button>
             </form>
     )
 }

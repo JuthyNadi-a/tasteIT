@@ -6,27 +6,30 @@ import classes from './Recipes.module.css'
 
 const Recipes = () => {
     const [data, setData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
     const [search, setSearch] = useState({
         string: '',
     });
 
     useEffect(() => {
         axios.get('http://localhost:3007/recipes').then((res) => 
-        setData(res.data))
+        setData(res.data));
+        setIsLoading(false);
     },[]);
-
+    
     const searchHandler = (e) => {
         setSearch({
             ...search,
             string: e.target.value,
         });
-        let foundRecipes = data.filter(recipe => 
-            /* console.log('data is',data) 
-            console.log('data name', data.name),
-            console.log('string', search.string), */
+        let foundRecipes = data.filter(recipe =>
             recipe.name.toLowerCase().includes(search.string.toLowerCase())
             );         
-        setData(foundRecipes);   
+        setData(foundRecipes);  
+        setIsLoading(false);
+    }
+    if (isLoading) {
+        return <p>Loading....</p>
     }
     return (
         <div className={classes.mainContainer}>
@@ -45,11 +48,9 @@ const Recipes = () => {
                 <RecipeCard 
                 key={item.id}
                 card_name = {item.name}
-                > 
-                {/* <ol>{item.ingredients.map((element,i) =>
-                    <li key={i}>{element.ingredient}, {element.quantity }</li>
-                )}</ol> */}
-                </RecipeCard>
+                flag= {item.flag}
+                link={`/recipes/${item.id}`}
+                />
                 )
             }
             </div>
