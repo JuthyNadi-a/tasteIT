@@ -48,6 +48,7 @@ const Recipes = () => {
                 <RecipeCard 
                 key={item.id}
                 card_name = {item.name}
+                image= {item.image}
                 flag= {item.country}
                 link={`/recipes/${item.id}`}
                 />

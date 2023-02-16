@@ -2,11 +2,11 @@
   "recipes": [
     {
       "id": 1,
-      "name": "Haleem",
+      "name": "Kacchi biriyani",
       "author": "Nabila",
       "country": "https://flagcdn.com/bd.svg",
       "description": "Snacks item. Made in special occassions.",
-      "image": "https://unsplash.com/photos/epEr6ewYufY",
+      "image": "https://media.istockphoto.com/id/1291627079/fi/valokuva/bengalin-lampaan-biryani-tarjoillaan-salaatin-ja-raitan-kanssa.jpg?s=612x612&w=0&k=20&c=CjmQBUnurWWl91_fmQ49lMGuU3oiisIApKj8iaX4_wY=",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -33,7 +33,7 @@
       "author": "Nadia",
       "country": "https://flagcdn.com/bd.svg",
       "description": "Snacks item. Made in special occassions.",
-      "image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tasteatlas.com%2Fmost-popular-meat-dishes-in-telangana&psig=AOvVaw0rapLq-OkNEOhooqafZ0al&ust=1674839159124000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCMCI6Zrc5fwCFQAAAAAdAAAAABAE",
+      "image": "https://media.istockphoto.com/id/1323098892/fi/valokuva/lautasellinen-chotpotia-maukasta-kuuluisaa-katuruokaa.jpg?s=612x612&w=0&k=20&c=ZiRCbKxfxezvOJjkL34NVdKCRhaiCI3DchIC2_SEXZ8=",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -60,7 +60,7 @@
       "author": "Ronita",
       "country": "https://flagcdn.com/fi.svg",
       "description": "Snacks item. Made in special occassions.",
-      "image": "",
+      "image": "https://media.istockphoto.com/id/1327828405/fi/valokuva/herkullinen-kakkuviipale.jpg?s=612x612&w=0&k=20&c=qE7uTt7BGaBSM96x0KH36wv6RQvAfNUwKkDAhm6MtXo=",
       "ingredients": [
         {
           "ingredient": "pulse seed",
@@ -80,6 +80,196 @@
         }
       ],
       "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+    },
+    {
+      "name": "Nadia Jahan Juthy",
+      "author": "Nadia",
+      "description": "ewd",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "potato",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "lobster",
+          "quantity": "5 pieces"
+        }
+      ],
+      "instructions": "wefgfv",
+      "country": "https://flagcdn.com/as.svg",
+      "id": 4
+    },
+    {
+      "name": "Nadia Jahan Juthy",
+      "author": "Aidan",
+      "description": "bmj",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "potato",
+          "quantity": "2"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": "4 cup"
+        }
+      ],
+      "instructions": "edewf",
+      "country": "https://flagcdn.com/aq.svg",
+      "id": 5
+    },
+    {
+      "name": "Nadia Jahan Juthy",
+      "author": "Nadia",
+      "description": "sdf",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "rgearg",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "potato",
+          "quantity": "5 pieces"
+        }
+      ],
+      "instructions": "fsfrsf",
+      "country": "https://flagcdn.com/ai.svg",
+      "id": 6
+    },
+    {
+      "name": "sf",
+      "author": "srfvs",
+      "description": "rsvgdf",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "potato",
+          "quantity": "5 pieces"
+        },
+        {
+          "ingredient": "water",
+          "quantity": "4 cup"
+        }
+      ],
+      "instructions": "rfvg",
+      "country": "https://flagcdn.com/aq.svg",
+      "id": 7
+    },
+    {
+      "name": "dv",
+      "author": "sdc",
+      "description": "sdv",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "potato",
+          "quantity": "2"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": "5 pieces"
+        }
+      ],
+      "instructions": "sdvc",
+      "country": "https://flagcdn.com/as.svg",
+      "id": 8
+    },
+    {
+      "name": "NADIA JAHAN JUTHY",
+      "author": "Aidan",
+      "description": "hbjh",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "rgearg",
+          "quantity": "2"
+        },
+        {
+          "ingredient": "potato",
+          "quantity": "3 cups"
+        }
+      ],
+      "instructions": "vhnbvnh",
+      "country": "https://flagcdn.com/ao.svg",
+      "id": 9
+    },
+    {
+      "name": "pizza",
+      "author": "Nadia",
+      "description": "hvjh",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "rgearg",
+          "quantity": "1"
+        },
+        {
+          "ingredient": "potato",
+          "quantity": "5 pieces"
+        }
+      ],
+      "instructions": "hhvjh",
+      "country": "https://flagcdn.com/ai.svg",
+      "id": 10
+    },
+    {
+      "name": "Tea",
+      "author": "Aidan",
+      "description": "vjh",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "hbjh",
+          "quantity": "b"
+        },
+        {
+          "ingredient": "hvjh",
+          "quantity": "2"
+        }
+      ],
+      "instructions": "hbvjh",
+      "country": "https://flagcdn.com/ao.svg",
+      "id": 11
+    },
+    {
+      "name": "Nadia Jahan Juthy",
+      "author": "Betty",
+      "description": "bjmhn",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "potato",
+          "quantity": "2"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": "1"
+        }
+      ],
+      "instructions": " bmjbmj",
+      "country": "https://flagcdn.com/as.svg",
+      "id": 12
+    },
+    {
+      "name": "Nadia Jahan Juthy",
+      "author": "Nadia",
+      "description": "sdcs",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "lobster",
+          "quantity": "5 pieces"
+        },
+        {
+          "ingredient": "potato",
+          "quantity": "3 cups"
+        }
+      ],
+      "instructions": "edcfsv",
+      "country": "https://flagcdn.com/ad.svg",
+      "id": 13
     }
   ]
 }

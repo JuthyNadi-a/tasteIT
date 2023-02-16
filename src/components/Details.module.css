@@ -1,6 +1,9 @@
 .details_container {
     position: relative;
 }
+.imageContainer {
+    position: relative;
+}
 .flag {
     position: absolute;
     top: 0;

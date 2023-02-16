@@ -1,0 +1,42 @@
+form {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(88, 6, 6);
+    font-weight: 600;
+}
+.content {
+    width: 50vw;
+    height: 80vh;
+    display: flex;
+    flex-direction:  
+    column;
+    margin-bottom: 5vh;
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vh;
+}
+input,textarea{
+    width: 30vw;
+    padding: 1.5vh 1vw;
+}
+select {
+    width: 32.5vw;
+    padding: 1.5vh 1vw;
+}
+
+button{
+    width: 15vw;
+    height: 7vh;
+    margin: 2vh 25vw;
+    padding: 1vh;
+}
+button:hover {
+    color: aliceblue;
+    background-color: dimgrey;
+}

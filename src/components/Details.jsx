@@ -16,15 +16,17 @@ const Details = () => {
     return (
         <div className={classes.details_container}>
             <h1>{recipeDetails.name}</h1>
-            <div>
-                <img className={classes.flag}
-                src= {recipeDetails.country}
-                alt={recipeDetails.country_name}
-                />
-            <img
+            <div className={classes.imageContainer}>
+                <div>
+                    <img className={classes.flag}
+                    src= {recipeDetails.country}
+                    alt={recipeDetails.country_name}
+                    />
+                </div>
+                <img
                 src= {recipeDetails.image}
                 alt={recipeDetails.name}
-            />
+                />
             </div>
             <div>
                 <h3>Description : </h3>

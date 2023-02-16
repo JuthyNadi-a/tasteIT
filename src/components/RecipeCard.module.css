@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 35vh;
+    width: 20vw;
     background-color: rgba(134, 172, 172, 0.321);
     margin: 1vh;
     padding: 2vh;

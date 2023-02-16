@@ -1,12 +1,10 @@
 .footer {
     background-color: rgba(224, 236, 236, 0.183);
     height: 5vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: rgb(95, 19, 4);
     font-weight: 600;
     font-size: 2.5vh;
-    position: sticky;
-    z-index: 1;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
 }

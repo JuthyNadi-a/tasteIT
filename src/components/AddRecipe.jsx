@@ -2,51 +2,67 @@ import axios from 'axios';
 import React , { useEffect, useState } from 'react';
 
 import classes from './Add.module.css';
+
 const Add = ({ name, author, description, instructions}) => {
     const [recipes, setRecipes] = useState({
         name: '', 
         author: '', 
         description: '',
         image: '',
+        ingredients: [
+            {
+                ingredient: '',
+                quantity: ''
+            }
+        ],
         instructions: '',
     });
     const [countries, setCountries] = useState([]);
-    const [ingredients, setIngredients] = useState([
-            {ingredient: '', quantity: ''} 
-    ]);
 
     const inputHandler = (e) => {
         setRecipes({...recipes, [e.target.name]: e.target.value})
     };
+   
     const handleIngredientChange = (i, e) => {
-        let data = [...ingredients];
-        data[i][e.target.name] = e.target.value;
-        setIngredients(data);
+        let data = {...recipes};
+        data.ingredients[i][e.target.name] = e.target.value;
+        setRecipes(data);
     }
 
     const addMoreHandler = () => {
-        let newIngredient = { ingredient: '', quantity: ''}
-        setIngredients([...ingredients, newIngredient])
+        let data = {...recipes};
+        data.ingredients.push({
+            ingredient: '', quantity: ''
+        });
+        setRecipes(data)
     }
     const submitHandler = (e) => {
         e.preventDefault();
-       axios.post("http://localhost:3007/recipes", {...recipes, ...ingredients})
+       axios.post("http://localhost:3007/recipes", {...recipes})
        .then((res)=> {
            setRecipes(res.data)
-           alert('Submitted');
+           alert('Recipe submitted');
         });
+        e.target.reset();
         setRecipes({
             ...recipes,
             name: '', 
-            author: '',
+            author: '', 
             description: '',
             image: '',
+            ingredients: [
+                {
+                    ingredient: '',
+                    quantity: ''
+                }
+            ],
             instructions: '',
-        });
-        setCountries([]);
-        setIngredients([
-            {ingredient: '', quantity: ''} 
-        ]);
+            });
+        recipes.ingredients = 
+        {
+            ingredient: '',
+            quantity: ''
+        }
     }
     useEffect(() => {
         axios.get("https://restcountries.com/v2/all").then((res)=> {
@@ -61,16 +77,17 @@ const Add = ({ name, author, description, instructions}) => {
     }, [])
 
     return (
-            <form className='content' onSubmit={submitHandler}>
-                <div className='inputs name'>
+        <form onSubmit={submitHandler}>
+            <div className={classes.content}>
+                <div className={classes.inputs}>
                     <label htmlFor="name">Recipe name</label>
                     <input type="text" required name="name" id="name" value={name} onChange={inputHandler}/>
                 </div>
-                <div className='inputs author'>
+                <div className={classes.inputs}>
                     <label htmlFor="author">Author</label>
                     <input type="text" required name="author" id="author" value={author} onChange={inputHandler}/>
                 </div>
-                <div className={classes.flag}>
+                <div className={classes.inputs}>
                     <label htmlFor="country">Recipe is from: </label>
                     <select 
                     id='country'
@@ -86,37 +103,38 @@ const Add = ({ name, author, description, instructions}) => {
                         }
                     </select>
                 </div>
-                <div className='inputs'>
+                <div className={classes.inputs}>
                     <label htmlFor="description">Description</label>
                     <textarea name="description" required id="description" cols="20" rows="7" value={description} onChange={inputHandler}></textarea>
                 </div>
-                <div>
+                <div className={classes.inputs}>
                     <label htmlFor="image">Image</label>
                     <input type="url" required name="image" id="image" onChange={inputHandler}/>
                 </div>
-                <div>
+                
+                <div id='ingredient-group'>
                 {
-                   ingredients.map((input, i) => {
+                   recipes.ingredients.map((ingredients, i) => {
                         return (
-                            <div className='ingredient-group' key={i}>
-                            <div>
+                            <div key={i}>
+                            <div className={classes.inputs}>
                                 <label htmlFor='ingredient'>Ingredient</label>
                                 <input 
                                 type="text" 
                                 required 
                                 name="ingredient" 
                                 placeholder="Enter ingredient's name"
-                                value={input.ingredient} 
+                                value={ingredients.ingredient} 
                                 onChange={ e => handleIngredientChange(i, e)}/>
                             </div>
-                            <div>
-                            <label htmlFor="quantity">Quantity</label>
+                            <div className={classes.inputs}>
+                                <label htmlFor="quantity">Quantity</label>
                                 <input 
                                 type="text" 
                                 required 
                                 name="quantity"
                                 placeholder="Enter ingredient's quantity"
-                                value={input.quantity}
+                                value={ingredients.quantity}
                                 onChange={e => handleIngredientChange(i, e)}/>
                             </div>
                         </div> 
@@ -124,13 +142,15 @@ const Add = ({ name, author, description, instructions}) => {
                     })
                 }
                 </div>
+                
                 <button type="submit" onClick={addMoreHandler}>Add more</button>
-                <div className='inputs'>
+                <div className={classes.inputs}>
                     <label htmlFor="instructions">Instructions</label>
                     <textarea name="instructions" required id="instructions" cols="20" rows="7" value={instructions} onChange={inputHandler}></textarea>
                 </div>
                 <button type="submit" id='send'>Submit recipe</button>
-            </form>
+            </div>
+        </form>
     )
 }
 
