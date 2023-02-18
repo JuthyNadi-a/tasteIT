@@ -2,7 +2,7 @@
 
 TasteIT, a recipe app where users from all over the world can share their love for food through browsing and adding their own dishes.
 
-![Screenshot](screenshot.jpeg)
+![Screenshot](./src/assets/screenshot.jpeg)
 
 ## Technologies used
 
