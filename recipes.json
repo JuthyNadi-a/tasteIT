@@ -10,22 +10,22 @@
       "ingredients": [
         {
           "ingredient": "pulse seed",
-          "quantity": "1 kg"
+          "quantity": "1/2 kg"
         },
         {
           "ingredient": "water",
           "quantity": ".5 l"
         },
         {
-          "ingredient": "Potato",
-          "quantity": "4"
+          "ingredient": "Rice",
+          "quantity": "1 kg"
         },
         {
           "ingredient": "Egg",
           "quantity": "3"
         }
       ],
-      "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
+      "instructions": "Boil pulse seeds and rice in water for an hour. Mix well."
     },
     {
       "id": 2,
@@ -63,42 +63,23 @@
       "image": "https://media.istockphoto.com/id/1327828405/fi/valokuva/herkullinen-kakkuviipale.jpg?s=612x612&w=0&k=20&c=qE7uTt7BGaBSM96x0KH36wv6RQvAfNUwKkDAhm6MtXo=",
       "ingredients": [
         {
-          "ingredient": "pulse seed",
-          "quantity": "1 kg"
+          "ingredient": "Coco powder",
+          "quantity": "4 cup"
         },
         {
           "ingredient": "water",
           "quantity": ".5 l"
         },
         {
-          "ingredient": "Potato",
-          "quantity": "4"
+          "ingredient": "Flour",
+          "quantity": "4 cup"
         },
         {
           "ingredient": "Egg",
           "quantity": "3"
         }
       ],
-      "instructions": "Boil pulse seeds in water for an hour. Boil the potatos and egg separartely. Smash the potatos. Mix well."
-    },
-    {
-      "name": "Tea",
-      "author": "Juthy",
-      "description": "wdx",
-      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
-      "ingredients": [
-        {
-          "ingredient": "lobster",
-          "quantity": "5 pieces"
-        },
-        {
-          "ingredient": "water",
-          "quantity": "3 cups"
-        }
-      ],
-      "instructions": "wada",
-      "country": "https://flagcdn.com/ad.svg",
-      "id": 4
+      "instructions": ""
     }
   ]
 }
