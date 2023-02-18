@@ -6,7 +6,6 @@ import classes from './Recipes.module.css'
 
 const Recipes = () => {
     const [data, setData] = useState([]);
-    const [isLoading, setIsLoading] = useState(true);
     const [search, setSearch] = useState({
         string: '',
     });
@@ -14,7 +13,6 @@ const Recipes = () => {
     useEffect(() => {
         axios.get('http://localhost:3007/recipes').then((res) => 
         setData(res.data));
-        setIsLoading(false);
     },[]);
     
     const searchHandler = (e) => {
@@ -22,18 +20,14 @@ const Recipes = () => {
             ...search,
             string: e.target.value,
         });
-        let foundRecipes = data.filter(recipe => {
-            return recipe.name.toLowerCase().includes(search.string.toLowerCase())
-            });         
+        let foundRecipes = data.filter(recipe => 
+            recipe.name.toLowerCase().includes(search.string.toLowerCase())
+            );         
         setData(foundRecipes);  
-        setIsLoading(false);
-    }
-    if (isLoading) {
-        return <p>Loading....</p>
     }
     return (
         <div className={classes.mainContainer}>
-           <div>
+           <div className={classes.searchBar}>
            <input
            type='search'
            placeholder='Search by recipe name'

@@ -1,7 +1,6 @@
 .mainContainer{
     display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -11,6 +10,9 @@
     align-items: center;
     justify-content: center;
     padding: 2vh;
+}
+.searchBar{
+    margin-bottom: 4vh;
 }
 .search {
     margin: 2vh;
