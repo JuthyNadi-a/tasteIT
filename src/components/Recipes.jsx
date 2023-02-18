@@ -22,9 +22,9 @@ const Recipes = () => {
             ...search,
             string: e.target.value,
         });
-        let foundRecipes = data.filter(recipe =>
-            recipe.name.toLowerCase().includes(search.string.toLowerCase())
-            );         
+        let foundRecipes = data.filter(recipe => {
+            return recipe.name.toLowerCase().includes(search.string.toLowerCase())
+            });         
         setData(foundRecipes);  
         setIsLoading(false);
     }
@@ -36,7 +36,7 @@ const Recipes = () => {
            <div>
            <input
            type='search'
-           placeholder='Search by name or country'
+           placeholder='Search by recipe name'
            {...search}
            onChange = {searchHandler}
            />

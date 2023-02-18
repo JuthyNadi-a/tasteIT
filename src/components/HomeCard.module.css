@@ -5,6 +5,11 @@
     justify-content: center;
     border: 1px outset rgb(83, 8, 8);
     margin: 2vh;
+    /* doesn't work as shown in solution of embold */
+    /* border {
+        radius: 5px;
+        box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(106, 16, 8, 0.842);
+    }; */
     border: 5px none;
     box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(106, 16, 8, 0.842);
     text-align: center;
