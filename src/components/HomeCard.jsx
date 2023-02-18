@@ -5,7 +5,7 @@ import classes from './HomeCard.module.css'
 const HomeCard = ({heading, details,navLink,name,target,rel}) => {
     return (
         <div className={classes.card}>
-            <p>{heading}</p>
+            <p className={classes.heading}>{heading}</p>
             <p>{details}</p>
             <a to={navLink} href={navLink} target={target} rel={rel} className={classes.link}>{name}</a>
         </div>

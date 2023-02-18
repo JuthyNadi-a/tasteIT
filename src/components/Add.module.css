@@ -9,7 +9,7 @@ form {
 }
 .content {
     width: 50vw;
-    height: 80vh;
+    min-height: 80vh;
     display: flex;
     flex-direction:  
     column;
@@ -21,22 +21,29 @@ form {
     justify-content: space-between;
     margin: 1vh;
 }
-input,textarea{
-    width: 30vw;
+input,textarea,select{
     padding: 1.5vh 1vw;
+    font-family: inherit;
+    font-size: 2.2vh;
+}
+input, textarea {
+    width: 30vw;
 }
 select {
     width: 32.5vw;
-    padding: 1.5vh 1vw;
 }
 
-button{
+.addRecipeBtn{
     width: 15vw;
     height: 7vh;
     margin: 2vh 25vw;
     padding: 1vh;
+    font-family: inherit;
+    font-size: 2.3vh;
 }
-button:hover {
+.addRecipeBtn:hover {
     color: aliceblue;
-    background-color: dimgrey;
+    background-color: rgb(125, 124, 124);
+    border: none;
+    font-size: 2.5vh;
 }

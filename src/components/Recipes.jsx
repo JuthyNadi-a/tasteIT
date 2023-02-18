@@ -40,7 +40,7 @@ const Recipes = () => {
            {...search}
            onChange = {searchHandler}
            />
-           <label htmlFor="search">Search</label>
+           <label htmlFor="search" className={classes.search}>Search</label>
            </div>
             <div className={classes.cards}>
             {

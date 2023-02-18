@@ -8,7 +8,7 @@ const RecipeCard = ({card_name, flag, image, link}) => {
         <div className={classes.recipeCard}>
             <img className={classes.flag} src={flag} alt={flag}/>
             <img src={image} alt={card_name}/>
-            <h1>{card_name}</h1>
+            <h1 className={classes.title}>{card_name}</h1>
             <NavLink to={link}><Button name={'See more'} className={classes.moreBtn}/></NavLink>
         </div>
     );

@@ -143,12 +143,12 @@ const Add = ({ name, author, description, instructions}) => {
                 }
                 </div>
                 
-                <button type="submit" onClick={addMoreHandler}>Add more</button>
+                <button type="submit" onClick={addMoreHandler} className={classes.addRecipeBtn}>Add more</button>
                 <div className={classes.inputs}>
                     <label htmlFor="instructions">Instructions</label>
                     <textarea name="instructions" required id="instructions" cols="20" rows="7" value={instructions} onChange={inputHandler}></textarea>
                 </div>
-                <button type="submit" id='send'>Submit recipe</button>
+                <button type="submit" id='send' className={classes.addRecipeBtn}>Submit recipe</button>
             </div>
         </form>
     )
