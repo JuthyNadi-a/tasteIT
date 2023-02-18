@@ -66,13 +66,13 @@ const Add = ({ name, author, description, instructions}) => {
     }
     useEffect(() => {
         axios.get("https://restcountries.com/v2/all").then((res)=> {
-            const countries = res.data.map((country)=> {
+            const selectCountries = res.data.map((country)=> {
                 return {
                     country_name: country.name,
                     flag: country.flag
                 };
             });
-            setCountries(countries);
+            setCountries(selectCountries);
         })
     }, [])
 
