@@ -18,6 +18,10 @@ TasteIT, a recipe app where users from all over the world can share their love f
 - Search any recipe by name
 - Navigate to different pages through the buttons
 
+### Architecture Diagram
+
+![diagram](./src/assets/TasteIt.drawio)
+
 ## How to run
 
 Clone the repo and set up the project:
