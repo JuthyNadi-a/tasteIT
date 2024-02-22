@@ -80,6 +80,25 @@
         }
       ],
       "instructions": ""
+    },
+    {
+      "name": "pizza",
+      "author": "Natalia",
+      "description": "pizza",
+      "image": "https://free-images.com/lg/bb3c/pizza_food_cooking_broccoli.jpg",
+      "ingredients": [
+        {
+          "ingredient": "water",
+          "quantity": "4 cup"
+        },
+        {
+          "ingredient": "flour",
+          "quantity": "3 cups"
+        }
+      ],
+      "instructions": "mix",
+      "country": "https://flagcdn.com/bh.svg",
+      "id": 5
     }
   ]
 }
