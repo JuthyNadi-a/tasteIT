@@ -24,46 +24,34 @@ const Add = ({ name, author, description, instructions}) => {
     };
    
     const handleIngredientChange = (i, e) => {
-        let data = {...recipes};
-        data.ingredients[i][e.target.name] = e.target.value;
-        setRecipes(data);
-    }
+        const updatedIngredients = [...recipes.ingredients];
+        updatedIngredients[i][e.target.name] = e.target.value;
+        setRecipes({ ...recipes, ingredients: updatedIngredients });
+    };
 
     const addMoreHandler = () => {
-        let data = {...recipes};
-        data.ingredients.push({
-            ingredient: '', quantity: ''
-        });
-        setRecipes(data)
-    }
-    const submitHandler = (e) => {
-        e.preventDefault();
-       axios.post("http://localhost:3007/recipes", {...recipes})
-       .then((res)=> {
-           setRecipes(res.data)
-           alert('Recipe submitted');
-        });
-        e.target.reset();
         setRecipes({
             ...recipes,
-            name: '', 
-            author: '', 
-            description: '',
-            image: '',
-            ingredients: [
-                {
-                    ingredient: '',
-                    quantity: ''
-                }
-            ],
-            instructions: '',
-            });
-        recipes.ingredients = 
-        {
-            ingredient: '',
-            quantity: ''
-        }
-    }
+            ingredients: [...recipes.ingredients, { ingredient: '', quantity: '' }],
+        });
+    };
+    
+    const submitHandler = (e) => {
+        e.preventDefault();
+        axios.post("http://localhost:3007/recipes", { ...recipes })
+            .then(() => {
+                alert('Recipe submitted successfully')
+                setRecipes({
+                    name: '',
+                    author: '',
+                    description: '',
+                    image: '',
+                    ingredients: [{ ingredient: '', quantity: '' }],
+                    instructions: '',
+                });
+                e.target.reset();
+            })
+    };
     useEffect(() => {
         axios.get("https://restcountries.com/v2/all").then((res)=> {
             const selectCountries = res.data.map((country)=> {

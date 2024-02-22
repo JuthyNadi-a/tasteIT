@@ -29,6 +29,13 @@ input,textarea,select{
 input, textarea {
     width: 30vw;
 }
+textarea {
+    max-width: 100%;
+    height: 20vh;
+    padding: 2vh 1vw; 
+    resize: horizontal; 
+    overflow-y: auto;
+}
 select {
     width: 32.5vw;
 }
