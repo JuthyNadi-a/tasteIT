@@ -20,7 +20,7 @@ TasteIT, a recipe app where users from all over the world can share their love f
 
 ### Architecture Diagram
 
-![diagram](./src/assets/TasteIt.jpg)
+![diagram](./src/assets/TasteIt.drawio.png)
 
 ## How to run
 
